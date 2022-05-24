@@ -1,0 +1,29 @@
+<div class="container" style="display: inline-block;">
+    <mat-card class="example-card">
+        <mat-card-subtitle>Take Away</mat-card-subtitle>
+        <p>Online</p>
+        <div style="float: right;">
+          <mat-icon class="clock" mat-card-avatar>query_builder</mat-icon> {{ date }}
+        </div>
+        
+        <mat-divider inset></mat-divider>
+        <mat-card-content>
+          <div>
+            <h4>#{{ order.id }}</h4>
+          </div>
+           <mat-divider inset></mat-divider>
+           <div *ngFor="let item of order.menuItems" class="itemContainer">
+             <p>{{item.description}} </p> -
+             <p>{{item.noOfItems }}</p>
+           </div>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <button mat-button [class.nocolor]="!orderIndex" [class.mainbtn]="orderIndex"
+          [class.pickedup]="picked"
+           (click)="UpdateStatus(orderId)">{{ btnText }}</button>
+        </mat-card-actions>
+        <mat-card-footer>
+        </mat-card-footer>
+      </mat-card>
+</div>

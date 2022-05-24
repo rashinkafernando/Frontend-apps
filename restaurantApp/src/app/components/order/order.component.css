@@ -1,0 +1,25 @@
+.mat-card {
+    width: 200px;
+    background-color: beige;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .clock{
+     float: left;
+     margin-left: 3px;
+     font-size: large;
+  }
+  .itemContainer p{
+    display: inline;
+  }
+  
+  .nocolor{
+    background-color: lightgray;
+    
+  }
+  .mainbtn,.pickedup{
+    background-color: teal;
+    color: white;
+  }
+  

@@ -1,0 +1,5 @@
+<div class="container">
+    <div class="OrderBoard" *ngFor="let order of queueOrders; let first = first">
+        <app-order [order]="order" [orderIndex]="first" [orderId]="order.id"></app-order>        
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="container">
+    <mat-card>
+        <mat-toolbar>  
+            <div align="center" class="header">      
+              {{ title }}
+            </div>         
+        </mat-toolbar> 
+        <mat-tab-group>
+            <mat-tab label="In Queue ({{ queueOrders.length }})"> 
+                <!-- In Queue component -->
+                <app-in-queue [queueOrders]="queueOrders"></app-in-queue> 
+            </mat-tab>
+            <mat-tab label="Prepared ({{ preparingOrders.length }})"> 
+                <!-- Prepared component -->
+                <app-prepared [preparingOrders]="preparingOrders"></app-prepared>
+            </mat-tab>
+            <mat-tab label="Cancelled ({{ 0 }})"> 
+                   <!-- Cancelled  -->
+                   <app-cancelled></app-cancelled>
+            </mat-tab>
+          </mat-tab-group>
+          
+    </mat-card>       
+</div>
