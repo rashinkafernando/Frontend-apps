@@ -1,0 +1,30 @@
+.mat-radio-button{
+    margin-left: 16px;
+    color: gray;
+}
+.cartItem{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 3.2%;
+    padding: 5px;
+}
+.mat-select{
+    width: 100px;
+}
+.mat-form-field,.mat-form-field,h4{
+    margin-left: 10px;
+}
+.ItemTitle{
+    margin-left: 10px;
+    font-size: medium;
+}
+h4{
+    color: teal;
+    font-weight: bold;
+}
+mat-icon{
+    color: crimson;
+    margin-left: 15px;
+}
+.done{
+    color: green;
+}

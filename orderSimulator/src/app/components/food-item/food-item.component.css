@@ -1,0 +1,23 @@
+.foodItem{
+    max-width: 500px;
+    background-color: blanchedalmond;
+}
+.mat-card-title{
+  font-family: 'Times New Roman', Times, serif;
+}
+.mat-card-image{
+  border-radius: 15px;
+  width: 350px;
+  margin-left: 2.5%;
+}
+.mat-card-content{
+  font-family: 'Times New Roman', Times, serif;
+}
+.mat-button{
+    background-color: teal;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}

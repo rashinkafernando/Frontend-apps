@@ -1,0 +1,18 @@
+<mat-card class="foodItem">
+    <mat-card-header>
+        <mat-card-title>{{ Item.itemName }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src={{Item.imageUrl}} alt={{Item.itemName}}>
+    <mat-card-content>
+        <p>
+            {{ Item.description }}
+        </p>
+        <h4>
+            {{ Item.itemPrice | currency : 'LKR'  }} 
+        </h4>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button style="margin-left: 30px;" (click)="addItems()">Add Item</button>
+    </mat-card-actions>
+</mat-card>  
+<br/>

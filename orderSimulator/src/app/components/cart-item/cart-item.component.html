@@ -1,0 +1,27 @@
+<div class="cartItem">
+    <mat-label class="ItemTitle">{{ Item.itemName }}</mat-label>
+    <br/><br/>
+    <mat-form-field >
+        <mat-label>Portion Size</mat-label>
+        <mat-select #selectValue (valueChange)="changeSize($event)">
+            <mat-option value="1">Small</mat-option>
+            <mat-option value="2">Medium</mat-option>
+            <mat-option value="3">Large</mat-option>
+        </mat-select>
+    </mat-form-field>
+    
+    <mat-form-field>
+        <mat-label>No. Of Items</mat-label>
+        <input matInput type="number" min="1" (change)="updateAmount($event)">
+    </mat-form-field> 
+    <!-- hide icon if input is not given -->
+    <mat-icon *ngIf="portionSize > 0 && noOfItems > 0" class="done" mat-card-avatar (click)="addMenuItemsToOrder()">done</mat-icon>
+           
+    <mat-icon mat-card-avatar (click)="removeItem()">delete</mat-icon>
+
+    <h4>
+        {{ pricePerItem | currency : 'LKR' }}
+    </h4>
+    
+</div>
+

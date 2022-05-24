@@ -1,0 +1,11 @@
+.mat-button{
+    background-color: mediumvioletred;
+    color: white;
+    padding: 5px;
+    width: 100px;
+
+}
+.container{
+    display:block; 
+    width:100%;
+}

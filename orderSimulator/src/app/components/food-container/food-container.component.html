@@ -1,0 +1,11 @@
+<div class="container">
+    <div style="width: 50%;display:inline-block;">
+        <div *ngFor="let item of foodItems">
+            <app-food-item [Item]="item" (addItemToOrder)="selectedItems.push($event)"></app-food-item>
+        </div>
+    </div>
+    <div style="width: 50%;float: right;">
+
+        <app-order-placement [Items]="selectedItems"></app-order-placement>
+    </div>
+</div>

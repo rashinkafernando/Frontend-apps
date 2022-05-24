@@ -1,0 +1,29 @@
+.mat-card-title{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.mat-radio-button{
+    margin-left: 16px;
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+}
+.mat-button{
+  background-color: mediumvioletred;
+  color: white;
+  padding: 5px;
+  width: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+}
+.message{
+  color: green;
+  margin-left: 10%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
+h4{
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 17px;
+  font-weight: bold;
+  color: crimson;
+}

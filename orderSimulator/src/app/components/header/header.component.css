@@ -1,0 +1,13 @@
+.header{
+    margin-top: 10px;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 40%;
+}
+
+/* change title bar color */
+.mat-toolbar {
+    background: teal;
+    color: white;
+    padding: bottom 1px;
+}
